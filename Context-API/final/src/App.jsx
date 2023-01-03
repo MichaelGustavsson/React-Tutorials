@@ -1,7 +1,8 @@
-import { Fragment, useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import LoginUser from './components/accounts/LoginUser';
 import Navbar from './components/appHeader/Navbar';
 import Home from './components/home/Home';
+import AuthContext from './components/store/auth-context';
 import './site.css';
 
 const App = () => {
@@ -31,12 +32,13 @@ const App = () => {
   };
 
   return (
-    <Fragment>
-      <Navbar
-        isLoggedIn={isLoggedIn}
-        logOut={onLogoutHandler}
-        userName={userName}
-      />
+    <AuthContext.Provider
+      value={{
+        isLoggedIn: isLoggedIn,
+        onLogout: onLogoutHandler,
+      }}
+    >
+      <Navbar />
       <main>
         <section className='container'>
           <h2 className='title'>React Context API</h2>
@@ -44,7 +46,7 @@ const App = () => {
           {isLoggedIn && <Home onLogout={onLogoutHandler} />}
         </section>
       </main>
-    </Fragment>
+    </AuthContext.Provider>
   );
 };
 

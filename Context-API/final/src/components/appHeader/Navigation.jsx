@@ -1,6 +1,10 @@
+import { useContext } from 'react';
+import AuthContext from '../store/auth-context';
 import classes from './Navigation.module.css';
 
-const Navigation = (props) => {
+const Navigation = () => {
+  const context = useContext(AuthContext);
+
   return (
     <nav className={classes.nav}>
       <ul>
@@ -10,10 +14,10 @@ const Navigation = (props) => {
         <li>
           <a href='/'>Sålda bilar</a>
         </li>
-        <li>{props.isLoggedIn && <span>{props.userName}</span>}</li>
-        {props.isLoggedIn && (
+        {/* <li>{props.isLoggedIn && <span>{props.userName}</span>}</li> */}
+        {context.isLoggedIn && (
           <li>
-            <button onClick={props.logOut}>Logga ut</button>
+            <button onClick={context.onLogout}>Logga ut</button>
           </li>
         )}
       </ul>
