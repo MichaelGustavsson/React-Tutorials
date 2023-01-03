@@ -1,29 +1,28 @@
-import { useState } from 'react';
+import { useRef } from 'react';
 import Card from '../ui/Card';
 const AddVehicleForm = () => {
-  const [regNo, setRegNo] = useState('');
-  const [make, setMake] = useState('');
-  const [model, setModel] = useState('');
-  const [modelYear, setModelYear] = useState('');
-  const [mileage, setMileage] = useState('');
+  const regNoInputRef = useRef();
+  const makeInputRef = useRef();
+  const modelInputRef = useRef();
+  const modelYearInputRef = useRef();
+  const mileageInputRef = useRef();
 
-  const onRegNoChangedHandler = (e) => {
-    setRegNo(e.target.value);
-  };
-  const onMakeChangedHandler = (e) => {
-    setMake(e.target.value);
-  };
-  const onModelChangedHandler = (e) => {
-    setModel(e.target.value);
-  };
-  const onModelYearChangedHandler = (e) => {
-    setModelYear(e.target.value);
-  };
-  const onMileageChangedHandler = (e) => {
-    setMileage(e.target.value);
+  const clearForm = () => {
+    regNoInputRef.current.value = '';
+    makeInputRef.current.value = '';
+    modelInputRef.current.value = '';
+    modelYearInputRef.current.value = '';
+    mileageInputRef.current.value = '';
   };
 
   const onSubmitHandler = (e) => {
+    console.log(regNoInputRef);
+    const regNo = regNoInputRef.current.value;
+    const make = makeInputRef.current.value;
+    const model = modelInputRef.current.value;
+    const modelYear = modelYearInputRef.current.value;
+    const mileage = mileageInputRef.current.value;
+
     e.preventDefault();
     const vehicle = {
       regNo,
@@ -34,16 +33,12 @@ const AddVehicleForm = () => {
     };
 
     console.log(vehicle);
+    clearForm();
   };
 
   const onCancelClickedHandler = (e) => {
     e.preventDefault();
-    console.log('Avbryter');
-    setRegNo('');
-    setMake('');
-    setModel('');
-    setModelYear('');
-    setMileage('');
+    clearForm();
   };
 
   return (
@@ -59,8 +54,7 @@ const AddVehicleForm = () => {
             type='text'
             name='regNo'
             id='regNo'
-            value={regNo}
-            onChange={onRegNoChangedHandler}
+            ref={regNoInputRef}
           />
         </div>
         <div className='form-control'>
@@ -69,8 +63,7 @@ const AddVehicleForm = () => {
             type='text'
             name='make'
             id='make'
-            value={make}
-            onChange={onMakeChangedHandler}
+            ref={makeInputRef}
           />
         </div>
         <div className='form-control'>
@@ -79,8 +72,7 @@ const AddVehicleForm = () => {
             type='text'
             name='model'
             id='model'
-            value={model}
-            onChange={onModelChangedHandler}
+            ref={modelInputRef}
           />
         </div>
         <div className='form-control'>
@@ -89,8 +81,7 @@ const AddVehicleForm = () => {
             type='text'
             name='modelYear'
             id='modelYear'
-            value={modelYear}
-            onChange={onModelYearChangedHandler}
+            ref={modelYearInputRef}
           />
         </div>
         <div className='form-control'>
@@ -99,8 +90,7 @@ const AddVehicleForm = () => {
             type='text'
             name='mileage'
             id='mileage'
-            value={mileage}
-            onChange={onMileageChangedHandler}
+            ref={mileageInputRef}
           />
         </div>
         <div className='buttons-container'>
