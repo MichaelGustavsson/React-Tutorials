@@ -1,24 +1,22 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import AuthContext from '../store/auth-context';
 import Card from '../ui/Card';
 import OutlinedButton from '../ui/OutlinedButton';
 
 import classes from './LoginUser.module.css';
 
-const AddUser = (props) => {
+const AddUser = () => {
   const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
 
+  const context = useContext(AuthContext);
   const onLoginHandler = (e) => {
     e.preventDefault();
 
-    const user = {
+    context.onLogin({
       userName,
       password,
-    };
-
-    props.onLogin(user);
-    setUserName('');
-    setPassword('');
+    });
   };
 
   const onUserNameChangedHandler = (e) => {

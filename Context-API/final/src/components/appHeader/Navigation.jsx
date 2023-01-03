@@ -14,7 +14,7 @@ const Navigation = () => {
         <li>
           <a href='/'>Sålda bilar</a>
         </li>
-        {/* <li>{props.isLoggedIn && <span>{props.userName}</span>}</li> */}
+        <li>{context.isLoggedIn && <span>{context.userName}</span>}</li>
         {context.isLoggedIn && (
           <li>
             <button onClick={context.onLogout}>Logga ut</button>
