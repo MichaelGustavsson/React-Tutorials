@@ -49,7 +49,10 @@ const AddVehicleForm = () => {
   return (
     <Card>
       <h1 className='title'>Lägg till ny bil</h1>
-      <form onSubmit={onSubmitHandler} className='form'>
+      <form
+        onSubmit={onSubmitHandler}
+        className='form'
+      >
         <div className='form-control'>
           <label htmlFor='regNo'>Registreringsnummer</label>
           <input
@@ -102,7 +105,10 @@ const AddVehicleForm = () => {
         </div>
         <div className='buttons-container'>
           <button className='btn btn-outline'>Spara</button>
-          <button onClick={onCancelClickedHandler} className='btn btn-outline'>
+          <button
+            onClick={onCancelClickedHandler}
+            className='btn btn-outline'
+          >
             Avbryt
           </button>
         </div>

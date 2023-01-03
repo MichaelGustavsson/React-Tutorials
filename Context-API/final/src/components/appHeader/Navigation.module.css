@@ -1,0 +1,45 @@
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav li {
+  margin: 0;
+  margin-left: 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav a:hover,
+.nav a:active {
+  color: #f3cafb;
+}
+
+.nav button {
+  font: inherit;
+  background: none;
+  border: 1px solid #f4f4f4;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.nav span {
+  color: white;
+}
+
+.nav button:focus {
+  outline: none;
+}
+
+.nav button:hover,
+.nav button:active {
+  color: #bda2e7;
+}
