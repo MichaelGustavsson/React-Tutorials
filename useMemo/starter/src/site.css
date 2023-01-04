@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400;1,900&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  background: linear-gradient(
+    rgb(109, 109, 245),
+    rgb(96, 96, 244),
+    rgb(74, 74, 249),
+    rgb(34, 34, 242)
+  );
+}
+
+main {
+  margin: 3rem 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  color: #2e0270;
+}
+
+.title {
+  color: #f4f4f4;
+}
+.container h2 {
+  padding: 5rem 0 1rem 0;
+}
