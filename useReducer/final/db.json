@@ -1,0 +1,116 @@
+{
+  "vehicles": [
+    {
+      "id": 1848,
+      "registrationNumber": "AR27966",
+      "vinNumber": "TMBJE73T0F9025084",
+      "manufacturer": "SKODA",
+      "model": "SUPERB",
+      "vehicleName": "SKODA, SUPERB",
+      "version": "2.0 TDI 140 COMBI",
+      "modelYear": "2015",
+      "mileage": 162000,
+      "transmission": "Manual",
+      "fuelType": "Diesel",
+      "comment": ""
+    },
+    {
+      "id": 1853,
+      "registrationNumber": "BX10114",
+      "vinNumber": "WVGZZZ1TZFW035798",
+      "manufacturer": "VOLKSWAGEN",
+      "model": "TOURAN",
+      "vehicleName": "VOLKSWAGEN, TOURAN",
+      "version": "2.0 TDI BMT 140 DSG6",
+      "modelYear": "2015",
+      "mileage": 177000,
+      "transmission": "Automatic",
+      "fuelType": "Diesel",
+      "comment": ""
+    },
+    {
+      "id": 1859,
+      "registrationNumber": "AL73738",
+      "vinNumber": "TMBAG9NE6E0061014",
+      "manufacturer": "SKODA",
+      "model": "OCTAVIA",
+      "vehicleName": "SKODA OCTAVIA 1.6 TDI 105 HK Hatchback",
+      "version": "1.6 TDI 105 HATCHBACK",
+      "modelYear": "2014",
+      "mileage": 109000,
+      "transmission": "Manual",
+      "fuelType": "Diesel",
+      "comment": ""
+    },
+    {
+      "id": "157d7e52-85a1-4db0-90ef-3028f6ffb727",
+      "registrationNumber": "ABC123",
+      "manufacturer": "Saab",
+      "model": "9000 Turbo",
+      "modelYear": "2001",
+      "mileage": "1250000"
+    },
+    {
+      "id": "8aa7bb89-6f26-4249-bb22-6313c473ab10",
+      "registrationNumber": "DEF222",
+      "manufacturer": "Ford",
+      "model": "Kuga",
+      "modelYear": "2013",
+      "mileage": "80000"
+    },
+    {
+      "id": "ab1595eb-eea3-41d8-9765-7b765ae0187d",
+      "registrationNumber": "GHI333",
+      "manufacturer": "Kia",
+      "model": "Ceed",
+      "modelYear": "2018",
+      "mileage": "897000"
+    },
+    {
+      "id": "25df7518-2171-45a3-b67d-4529c4a6d65c",
+      "registrationNumber": "",
+      "manufacturer": "",
+      "model": "",
+      "modelYear": "",
+      "mileage": ""
+    },
+    {
+      "id": "b0b4b536-8079-438c-a6a0-4434c1f49cb6",
+      "registrationNumber": "",
+      "manufacturer": "",
+      "model": "",
+      "modelYear": "",
+      "mileage": ""
+    },
+    {
+      "id": "6e94dc7b-8655-4568-8780-e39299d5e094",
+      "registrationNumber": "",
+      "manufacturer": "",
+      "model": "",
+      "modelYear": "",
+      "mileage": ""
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "userName": "MichaelGustavsson",
+      "email": "michael@gmail.com"
+    },
+    {
+      "id": 2,
+      "userName": "AnnikaGustavsson",
+      "email": "annika@gmail.com"
+    },
+    {
+      "userName": "EmmaGustavsson",
+      "email": "emma@gmail.com",
+      "id": 3
+    },
+    {
+      "userName": "MalinGustavsson",
+      "email": "malin@gmail.com",
+      "id": 4
+    }
+  ]
+}
